@@ -1,0 +1,4 @@
+title = 'CCHM Space Station'
+baseURL = 'https://cchm-station.github.io/'
+languageCode = 'ja'
+theme = 'test-theme'
