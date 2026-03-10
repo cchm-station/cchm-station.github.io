@@ -1,0 +1,47 @@
+{{ define "main" }}
+<main>
+  <article>
+    <div class="post-container">
+      <!-- Main Content -->
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">{{ .Title }}</h1>
+          <div class="meta">{{ if .Date }} {{ dateFormat ":date_medium" .Date }} 投稿 {{ end }} {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+          <div class="meta">{{ if .Lastmod }} {{ dateFormat ":date_medium" .Lastmod }} 更新 {{ end }}</div>
+        </div>
+        {{ if isset .Params "tldr" }}
+        <div class="tldr">
+          <strong>TL;DR:</strong>
+          {{ .Params.tldr }}
+          <hr>
+        </div>{{ end }}
+        <section class="body">
+          {{ .Content }}
+        </section>
+        <div class="post-tags">
+          {{ if ne .Type "page" }}
+          {{ if gt .Params.tags 0 }}
+          <nav class="nav tags">
+            <ul class="tags">
+              {{ range .Params.tags }}
+              <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></li>
+              {{ end }}
+            </ul>
+          </nav>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- TOC -->
+      {{ if and (isset .Params "toc") (.Params.toc) }}
+      <div class="toc">
+        <strong>目次</strong>
+        {{ .TableOfContents }}
+      </div>
+      {{ end }}
+    </div>
+
+  </article>
+</main>
+{{ end }}
