@@ -1,4 +1,89 @@
-title = 'CCHM Space Station'
+title = 'SPACE STATION'
 baseURL = 'https://cchm-station.github.io/'
+copyright = "© cerealandchoccymilk"
 languageCode = 'ja'
-theme = 'test-theme'
+defaultContentLanguage = 'ja'
+timeZone = 'US/Eastern'
+theme = "archie" # https://github.com/athul/archie
+
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+# disqusShortname = "yourDisqusShortname"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[pagination]
+  pagerSize = 3 # articles per page
+
+[params]
+	subtitle = "ちょきのSF翻訳ポータル / Choccy's Sci-fi translation portal"
+  mode = "dark" # color-mode → light,dark,toggle or auto
+	useCDN = false # don't use CDNs for fonts and icons, instead serve them locally.
+	mathjax = false # enable MathJax support
+	katex = false # enable KaTeX support
+  customcss = ["css/indexpage.css", "css/custom.css"]
+
+# Social Tags
+
+[[params.social]]
+  name = "Homepage"
+  icon = "home"
+  url = "https://cerealandchoccymilk.neocities.org"
+[[params.social]]
+  name = "Tumblr"
+  icon = "link"
+  url = "https://cerealandchoccymilk.tumblr.com"
+
+# Main menu Items
+
+[[menu.main]]
+  name = "TOP"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "ABOUT"
+  url = "/about"
+  weight = 2
+[[menu.main]]
+  name = "BLOG"
+  url = "/posts"
+  weight = 3
+[[menu.main]]
+  name = "TAGS"
+  url = "/tags"
+  weight = 4
+[[menu.main]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 5
+
+# Front matter
+
+[frontmatter]
+  lastmod = ['lastmod']
+
+# Markdown
+
+[markup]
+  [markup.goldmark]
+    # [markup.goldmark.renderer]
+      # unsafe = false
+    [markup.goldmark.extensions]
+      strikethrough = false
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.delete]
+        enable = true
+        [markup.goldmark.extensions.extras.mark]
+        enable = true
+        [markup.goldmark.extensions.extras.subscript]
+        enable = true
+        [markup.goldmark.extensions.extras.superscript]
+        enable = true
+      [markup.goldmark.extensions.cjk]
+        enable = true
+        eastAsianLineBreaks = true

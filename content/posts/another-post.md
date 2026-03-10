@@ -1,15 +1,11 @@
 ---
 title: "Blog Post"
-date: {{ .Date }}
+date: 2026-03-08T22:52:04-04:00
 # lastmod:  # date +"%Y-%m-%dT%T%z"
 draft: true
-# description:
 toc: false
+description:
 # tags: [tag 1, tag 2]
 ---
 
-Summary
 
-<!--more-->
-
-More text

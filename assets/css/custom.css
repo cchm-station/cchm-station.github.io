@@ -1,0 +1,13 @@
+mark {
+  color: var(--color-text-dark, #ffffff);
+  background-color: #0066ffc0;
+}
+.sm {
+  font-size: 0.85em;
+}
+
+.giscus {
+  width: 35em;
+  max-width: 100%;
+  margin: auto;
+}
