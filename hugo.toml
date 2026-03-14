@@ -23,6 +23,7 @@ pygmentscodefencesguesssyntax = true
 [params]
 	subtitle = "ちょきのSF翻訳ポータル / Choccy's Sci-fi translation portal"
   mode = "dark" # color-mode → light,dark,toggle or auto
+  favicon = "/favicon.ico"
 	useCDN = false # don't use CDNs for fonts and icons, instead serve them locally.
 	mathjax = false # enable MathJax support
 	katex = false # enable KaTeX support
