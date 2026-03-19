@@ -6,12 +6,12 @@
     {{- else -}}
     <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">{{ template "feathericon" (dict "Icon" $key.icon "UseCDN" .Site.Params.useCDN) }}</a>
     {{- end -}}
-    <a class="border"></a>
+    <span class="border"></span>
     {{- end -}}
   </div>
   <div class="footer-info">
-    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a
-      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }}<span class="border"></span>{{ end }}<a
+      href="https://github.com/athul/archie">Archie Theme</a><span class="border"></span>Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
 {{ if not hugo.IsServer }}

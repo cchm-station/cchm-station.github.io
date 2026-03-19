@@ -97,7 +97,8 @@ a:focus {
 }
 
 .header nav,
-footer {
+footer,
+.border {
   border-color: var(--color-border-dark, #0066ff);
 }
 
