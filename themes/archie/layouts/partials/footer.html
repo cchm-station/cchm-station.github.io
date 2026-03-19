@@ -10,8 +10,13 @@
     {{- end -}}
   </div>
   <div class="footer-info">
-    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }}<span class="border"></span>{{ end }}<a
-      href="https://github.com/athul/archie">Archie Theme</a><span class="border"></span>Built with <a href="https://gohugo.io">Hugo</a>
+    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }}<span class="border"></span>{{ end }}
+  </div>
+  <div class="footer-info">
+    <a href="https://github.com/athul/archie">Archie Theme</a><span class="border"></span>
+  </div>
+  <div class="footer-info">
+    Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
 {{ if not hugo.IsServer }}

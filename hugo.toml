@@ -21,7 +21,7 @@ pygmentscodefencesguesssyntax = true
   pagerSize = 3 # articles per page
 
 [params]
-	subtitle = "ちょきのSF翻訳ポータル / Choccy's Sci-fi translation portal"
+	# subtitle = "ちょきのSF翻訳ポータル / Choccy's Sci-fi translation portal"
   mode = "dark" # color-mode → light,dark,toggle or auto
   favicon = "/favicon.ico"
 	useCDN = false # don't use CDNs for fonts and icons, instead serve them locally.
@@ -29,7 +29,7 @@ pygmentscodefencesguesssyntax = true
 	katex = false # enable KaTeX support
   customcss = ["css/indexpage.css", "css/custom.css"]
 
-# Social Tags
+# Social Tags - https://feathericons.com / https://simpleicons.org (simple:)
 
 [[params.social]]
   name = "Homepage"
@@ -37,8 +37,12 @@ pygmentscodefencesguesssyntax = true
   url = "https://cerealandchoccymilk.neocities.org"
 [[params.social]]
   name = "Tumblr"
-  icon = "link"
-  url = "https://cerealandchoccymilk.tumblr.com"
+  icon = "simple:tumblr"
+  url = "https://cerealandchoccymilk.tumblr.com/tagged/17776ja"
+[[params.social]]
+  name = "Bluesky"
+  icon = "simple:bluesky"
+  url = "https://17776ja.bsky.social"
 
 # Main menu Items
 
