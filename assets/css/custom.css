@@ -5,6 +5,9 @@ mark {
 .sm {
   font-size: 0.85em;
 }
+sup, sub {
+  font-size:x-small;
+}
 
 .giscus {
   width: 35em;
